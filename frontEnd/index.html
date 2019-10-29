@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spoti</title>
+    <link rel="stylesheet" href="style.css">
+
+    <h1>Spotify Analytics</h1>
+
+    <section id="nav-bar">
+        <div>
+            <form id="search">
+                <label for="artist"></label>
+                <input id="artist" type="text" placeholder="Artist Name" name="name"/>
+                <input class="submit-button" id="artistButton" type="submit" value="Add"/>  
+            </form>
+        </div>
+        <div>
+            <form id="search">
+                <label for="album"></label>
+                <input id="album" type="text" placeholder="Album Name" name="name"/>
+                <input class="submit-button" id="albumButton" type="submit" value="Add"/>  
+            </form>
+        </div>
+        <!-- <div>
+            <form id="album-search" method="GET" action="">
+                <input id="albums" type="text" placeholder="Find Albums By Artist" name="name"/>
+                <input class="submit-button" type="submit" value="Find"/>  
+            </form>
+        </div> -->
+        <div id="artist-button" >
+            <button type="button">View Artists</button>
+        </div>
+        <div id="albums-button">
+            <button type="button">View Albums</button>
+        </div>
+        <div id="all" >
+            <button type="button">View All</button>
+        </div>
+    </section>
+</head>
+<body>
+    
+
+    <div id = "artistCards"></div>
+    <div id = "albumCards"></div>
+
+    <script src="artist.js"></script>
+    <script src="album.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+ <section id="nav-bar">
+        <div>
+            <form id="search" method="POST" action="http://localhost:3000/artists">
+                <label for="artist"></label>
+                <input id="artist" type="text" placeholder="Artist Name" name="name"/>
+                <input class="submit-button" type="submit" value="Add"/>  
+            </form>
+        </div>
+        <div>
+            <form id="search" method="POST" action="http://localhost:3000/albums">
+                <label for="album"></label>
+                <input id="album" type="text" placeholder="Album Name" name="name"/>
+                <input class="submit-button" type="submit" value="Add"/>  
+            </form>
+        </div>
+        <div>
+            <form id="album-search" method="GET" action="">
+                <input id="albums" type="text" placeholder="Find Albums By Artist" name="name"/>
+                <input class="submit-button" type="submit" value="Find"/>  
+            </form>
+        </div>
+        <div id="artist-button" >
+            <button type="button">View Artists</button>
+        </div>
+        <div id="albums-button">
+            <button type="button">View Albums</button>
+        </div>
+        <div id="all" >
+            <button type="button">View All</button>
+        </div>
+    </section>
